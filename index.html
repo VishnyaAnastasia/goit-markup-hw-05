@@ -62,7 +62,7 @@
         <section class="hero">
             <div class="hero-container container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-btn" type="button">Заказать услугу</button>
+                <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -131,16 +131,25 @@
                 <h2 class="what-we-do-title">Чем мы занимаемся</h2>
                 <ul class="what-we-do-list list">
                     <li class="what-we-do-list-item">
-                        <img src="./images/box-1.jpg" alt="программист пишет программный код" width="370"
-                            height="294" />
+                        <div class="what-we-do-img-wrapper">
+                            <img src="./images/box-1.jpg" alt="программист пишет программный код" width="370"
+                                height="294" />
+                            <p class="what-we-do-overlay">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ </p>
+                        </div>
                     </li>
                     <li class="what-we-do-list-item">
-                        <img src="./images/box-2.jpg" alt="дизайнер продумывает дизайн сайта" width="370"
-                            height="294" />
+                        <div class="what-we-do-img-wrapper">
+                            <img src="./images/box-2.jpg" alt="дизайнер продумывает дизайн сайта" width="370"
+                                height="294" />
+                            <p class="what-we-do-overlay"> МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ </p>
+                        </div>
                     </li>
                     <li class="what-we-do-list-item">
-                        <img src="./images/box-3.jpg" alt="дизайнер подбираем цветовое решение сайта" width="370"
-                            height="294" />
+                        <div class="what-we-do-img-wrapper">
+                            <img src="./images/box-3.jpg" alt="дизайнер подбираем цветовое решение сайта" width="370"
+                                height="294" />
+                            <p class="what-we-do-overlay"> ДИЗАЙНЕРСКИЕ РЕШЕНИЯ </p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -416,6 +425,18 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="modal-close-btn-icon" width="11" height="11">
+                    <use href="./images/sprite.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
 </body>
+
+<script src="./js/modal.js"></script>
 
 </html>
